@@ -488,10 +488,13 @@ a:hover, a:focus {
 .h1_reasons {
     font-size: 36px;
     /*font-family: 'PFBeauSansPro-Bbook';*/
+
     color: #505050;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
+    margin-bottom: 0px;
 }
+
 
 
 .h1_reviews {

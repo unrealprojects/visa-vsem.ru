@@ -152,7 +152,7 @@
             $.ajax({
                 type: "POST",
                 url: "mail.php",
-                data: "phone1="+$(".stock input").val()+" phone2="+$(".inner_order input").val(),
+                data: "phone1="+$(".stock input").val()+"&phone2="+$(".inner_order input").val(),
                 success: function(){
                     $(".inner_order input," +
                         " .inner_order a," +

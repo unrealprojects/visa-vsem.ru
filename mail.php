@@ -8,7 +8,7 @@
     }
     /* получатели */
     $to= "Oleg <olegblud@gmail.com>" . ", " ; //обратите внимание на запятую
-    $to .= "Oleg <olegblud1@gmail.com>";
+    $to .= "Ruslan <69lee@mail.ru>";
 
     /* тема/subject */
     $subject = "Заявка visa-vsem.ru";

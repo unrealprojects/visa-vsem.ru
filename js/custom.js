@@ -16,12 +16,12 @@
             interval: 15000
         });
 
-        if($(window).height()>$(window).width()){
-            var prop = $(window).height()/$(window).width();
+        if($(window).height()>$(window).width()*0.7){
+            var prop = $(window).height()/($(window).width());
             $('.site-wrapper').css('background-size','150%');
         }
 
-        if($(window).width()>950){
+        if($(window).width()>950 && !device.ios() && !device.ipad() && !device.iphone() && !device.ipod()){
             startScroll=$(window).scrollTop();
             work=false;
 
@@ -152,7 +152,7 @@
             $.ajax({
                 type: "POST",
                 url: "mail.php",
-                data: "phone1="+$(".stock input").val()+" phone2="+$(".inner_order input").attr('value'),
+                data: "phone1="+$(".stock input").val()+" phone2="+$(".inner_order input").val(),
                 success: function(){
                     $(".inner_order input," +
                         " .inner_order a," +

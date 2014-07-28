@@ -3,10 +3,12 @@
         $phone = $_POST["phone1"];
     }elseif(!empty($_POST["phone2"])){
         $phone = $_POST["phone2"];
+    }else{
+        $phone='';
     }
     /* получатели */
-    $to= "Mary <mary@example.com>" . ", " ; //обратите внимание на запятую
-    $to .= "Oleg <olegblud@gmail.com>";
+    $to= "Oleg <olegblud@gmail.com>" . ", " ; //обратите внимание на запятую
+    $to .= "Oleg <olegblud1@gmail.com>";
 
     /* тема/subject */
     $subject = "Заявка visa-vsem.ru";

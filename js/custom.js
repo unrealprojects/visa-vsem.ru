@@ -21,7 +21,6 @@
             $('.site-wrapper').css('background-size','150%');
         }
 
-
         if($(window).width()>950){
             startScroll=$(window).scrollTop();
             work=false;

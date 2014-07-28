@@ -5,10 +5,11 @@
         $('#steps').parallax("0%", -0.3);
         $('#order').parallax("0%", -0.5);
         $('#contacts').parallax("0%", -0.5);*/
-
+        massage=false;
         $("html").niceScroll({cursorcolor:"rgb(255,255,255)",cursorwidth:'6',cursorborderradius:'0',cursorborder:'none',zindex:"9999"});
-        $('#main .stock input').mask('(999) 999-99-99');
-        $('.inner_order input').mask('(999) 999-99-99');
+        $('#main .stock input,.inner_order input').mask('(999) 999-99-99',{completed:function(){
+            massage=true;
+        }});
         /* При скроле */
 
         $('.carousel').carousel({
@@ -146,4 +147,27 @@
 
 
     });
+
+    $(".inner_order a, .stock a").click(function(){
+        if(massage){
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: "phone1="+$(".stock input").val()+" phone2="+$(".inner_order input").attr('value'),
+                success: function(){
+                    $(".inner_order input," +
+                        " .inner_order a," +
+                        " .inner_order span," +
+                        ".inner_order br," +
+                        " .stock input," +
+                        " .stock a," +
+                        " .stock span," +
+                        ".stock br").remove();
+                    $(".inner_order p:first-of-type,.stock p:first-of-type").after("<p class='thanks'>Спасибо за зявку!</p>");
+                }
+            });
+        }
+            return false;
+        });
+
 })(jQuery);

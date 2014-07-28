@@ -264,15 +264,15 @@ body {
 }
 
 .navbar-right bold {
-    font-size: 23px;
+    font-size: 27px;
     /*font-family: 'PFBeauSansPro-Bold';*/
     display: block;
     clear: right;
-    width: 203px;
     margin-left: -4px;
     float: left;
     clear: right;
     text-shadow: none;
+    margin-top: -5px;
 }
 
 .navbar-right img{
@@ -283,6 +283,7 @@ body {
 
 .navbar-right a {
     float: left;
+    margin: 5px 0px 0px 0px;
 
     background: #FFFF00;
     /*border: 1px solid #ba9b00;*/
@@ -290,8 +291,6 @@ body {
 
     /*line-height: 38px;*/
     line-height: 34px;
-
-    margin: 10px 0px 0px 0px;
     display: block;
     height: 40px;
     color: #0B0000;
@@ -546,7 +545,7 @@ a:hover, a:focus {
 .steps_desc {
     font-size: 22px;
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .navbar-brand, .navbar-nav>li>a {
@@ -563,8 +562,9 @@ a:hover, a:focus {
 .steps_desc2 {
     font-size: 22px;
     display: block;
-    margin-top: 50px;
+    margin-top: 30px;
 }
+
 .step1{
     background:url(/img/step1.png);
 }
@@ -602,6 +602,11 @@ a:hover, a:focus {
     box-shadow: 0px 0px 25px 0px rgb( 0, 0, 0 );
     border: 1px solid #B2B2B2;
     border: none;
+}
+
+.inner_order p b {
+    font-weight: 400;
+    color: yellow;
 }
 
 .table_row {
@@ -806,6 +811,14 @@ a:focus,input:focus {
     outline: none;
 }
 
+p.thanks {
+    color: yellow;
+}
+
+.stock .thanks{
+    color:red;
+}
+
 
 /* media */
 @media (max-width: 1850px) {
@@ -941,7 +954,7 @@ a:focus,input:focus {
 
     .navbar-right {
         padding: 30px 0 30px 0;
-        width: 221px;
+        width: 225px;
     }
 
     .phone{
@@ -950,19 +963,19 @@ a:focus,input:focus {
     }
 
     .navbar-right bold {
-        font-size: 18px;
+        font-size: 21px;
         text-align: left;
         width: auto;
+        margin-left: -2px;
     }
 
     .navbar-right a {
-
-        line-height: 33px;
         height: 34px;
         color: #0B0000;
         font-size: 16px;
         padding-top: 3px;
         width: 153px;
+        line-height: 30px;
     }
 
 
@@ -1067,7 +1080,7 @@ a:focus,input:focus {
     }
 
     .inreasons h2 {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 5px;
     }
 
@@ -1076,11 +1089,11 @@ a:focus,input:focus {
         margin-bottom: 5px;
     }
     .inreasons p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .inreasons {
-        height: 120px;
+        height: 130px;
     }
 
     .go_bottom_dark img {
@@ -1206,6 +1219,7 @@ a:focus,input:focus {
         padding: 0px 20px 10px 10px;
         font-size: 12px;
     }
+
     .site-wrapper {
         background-size: 300% !important;
     }
@@ -1247,7 +1261,7 @@ a:focus,input:focus {
 
     .navbar-right {
         padding: 24px 0 17px 0;
-        width: 214px;
+        width: 220px;
         margin: 0 auto;
     }
 
@@ -1349,6 +1363,27 @@ a:focus,input:focus {
 
 
 @media (min-width: 1800px){
+
+    .navbar-nav>li>a {
+        padding: 5px 0px;
+        margin: 0px 36px 0px 0px;
+    }
+
+    .h1_reviews,.h1_steps,.h1_reasons {
+        font-size: 48px;
+        margin-bottom:100px;
+    }
+
+    .inner_order p {
+        font-size: 36px;
+    }
+    .inreasons p {
+        font-size: 24px;
+    }
+
+    .inreasons {
+        height: 260px;
+    }
     .contacts_container {
         font-size: 24px;
     }
@@ -1366,10 +1401,63 @@ a:focus,input:focus {
         margin-top: 50px;
         font-size: 24px;
     }
+
+
+    /* Большая шапка */
+    .navbar-header img {
+        width: 240px;
+    }
+
+    .navbar-nav {
+        width: 1400px;
+        padding: 130px 0px 75px 130px;
+    }
+
+    .phone {
+        background: url('/img/phone.png') 0% 0% no-repeat;
+        width: 90px;
+        height: 148px;
+        background-size: 100%;
+    }
+
+    .navbar-nav>li>a {
+        padding: 10px 0px;
+     }
+
+    .navbar-right {
+        width: 370px;
+        margin-right: 50px;
+    }
+
+    .navbar-right a {
+        font-size: 26px;
+        width: 240px;
+        height: 54px;
+        line-height: 50px;
+    }
+
+    .navbar-right bold {
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin:0px;
+    }
+
+    #main .col-md-4 p {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    #main .col-md-4 li {
+        font-size: 26px;
+    }
+
+    .navbar-right a {
+        margin: 12px 0px 0px 0px;
+    }
 }
 
 @media (max-width: 480px){
-
     .navbar-right{
         display: none;
     }

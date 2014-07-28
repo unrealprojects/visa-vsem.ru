@@ -20,9 +20,9 @@
      <title>Заявка visa-vsem.ru</title>
     </head>
     <body>
-    <p>
-    Телефон: '.$phone.'
-    </p>
+        <p>
+        Телефон: '.$phone.'
+        </p>
     </body>
     </html>
     ';

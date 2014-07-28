@@ -909,6 +909,10 @@ p.thanks {
 /* Меньше 1550 */
 
 @media (max-width: 1550px) {
+
+    .h1_reviews{
+        font-size: 24px;
+    }
     .navbar-nav {
         font-size: 14px;
         width: 1000px;
@@ -1108,7 +1112,7 @@ p.thanks {
     }
 
     .h1_reasons {
-        font-size: 18px;
+        font-size: 24px;
         margin-bottom: 0px;
     }
 

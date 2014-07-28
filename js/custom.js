@@ -162,7 +162,7 @@
                         " .stock a," +
                         " .stock span," +
                         ".stock br").remove();
-                    $(".inner_order p:first-of-type,.stock p:first-of-type").after("<p class='thanks'>Спасибо за зявку!</p>");
+                    $(".inner_order p:first-of-type,.stock p:first-of-type").after("<p class='thanks'>Спасибо за заявку!</p>");
                 }
             });
         }

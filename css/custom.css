@@ -479,7 +479,8 @@ a:hover, a:focus {
 
 .inreasons {
     height: 250px;
-    background: #FFFF00;
+    /*background: #FFFF00;*/
+    background: rgba(255, 255, 0, 0.6);
     /*border-bottom: 5px solid #505050;*/
     box-shadow: 0px 0px 25px 0px rgb( 0, 0, 0 );
 }

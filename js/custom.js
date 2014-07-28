@@ -7,7 +7,7 @@
         $('#contacts').parallax("0%", -0.5);*/
         massage=false;
         $("html").niceScroll({cursorcolor:"rgb(255,255,255)",cursorwidth:'6',cursorborderradius:'0',cursorborder:'none',zindex:"9999"});
-        $('#main .stock input,.inner_order input').mask('(999) 999-99-99',{completed:function(){
+        $('#main .stock input,.inner_order input').mask('+7(999) 999-99-99',{completed:function(){
             massage=true;
         }});
         /* При скроле */

@@ -21,7 +21,7 @@
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
     /* дополнительные шапки */
-    $headers .= "From: Святогор <office@unrealprojects.com>\r\n";
+    $headers .= "From: visa-vsem.ru <office@unrealprojects.com>\r\n";
     $headers .= "Cc: office@unrealprojects.com\r\n";
     $headers .= "Bcc: office@unrealprojects.com\r\n";
 

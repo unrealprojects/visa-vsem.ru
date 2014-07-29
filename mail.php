@@ -7,7 +7,7 @@
         $phone='Ошибка';
     }
     /* получатели */
-    $to= "Oleg <olegblud@gmail.com>" . ", " ; //обратите внимание на запятую
+    $to= "Oleg <office@unrealprojects.com>" . ", " ;
     $to .= "Ruslan <69lee@mail.ru>";
 
     /* тема/subject */
@@ -18,6 +18,7 @@
     <html>
     <head>
      <title>Заявка visa-vsem.ru</title>
+     <meta charset="utf-8">
     </head>
     <body>
         <p>
@@ -32,9 +33,9 @@
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 
     /* дополнительные шапки */
-    $headers .= "From: Visa Vsem <info@visa-vsem.ru>\r\n";
-    $headers .= "Cc: info@visa-vsem.ru\r\n";
-    $headers .= "Bcc: info@visa-vsem.ru\r\n";
+    $headers .= "From: Visa Vsem <office@unrealprojects.com>\r\n";
+    $headers .= "Cc: office@unrealprojects.com\r\n";
+    $headers .= "Bcc: office@unrealprojects.com\r\n";
 
     /* и теперь отправим из */
     mail($to, $subject, $message, $headers);

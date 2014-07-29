@@ -1,10 +1,10 @@
 <?php
     if(!empty($_POST["phone1"])){
         $phone = $_POST["phone1"];
-    }elseif(!empty($_POST["phone2"])){
+    }elseif(!empty($_POST["phone2"]) && !isset($phone)){
         $phone = $_POST["phone2"];
     }else{
-        $phone='';
+        $phone='Ошибка';
     }
     /* получатели */
     $to= "Oleg <olegblud@gmail.com>" . ", " ; //обратите внимание на запятую
@@ -37,4 +37,4 @@
     $headers .= "Bcc: info@visa-vsem.ru\r\n";
 
     /* и теперь отправим из */
-    mail($to, $subject, $message, $headers);
+    echo mail($to, $subject, $message, $headers);

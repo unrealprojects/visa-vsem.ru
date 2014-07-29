@@ -852,8 +852,8 @@ p.thanks {
     font-size: 15px;
     position: absolute;
     left: 50%;
-    margin-left: -100px;
-    width: 200px;
+    margin-left: -150px;
+    width: 300px;
     bottom: 0%;
     z-index: 1;
 }
@@ -868,8 +868,8 @@ p.thanks {
     font-size: 15px;
     position: absolute;
     left: 50%;
-    margin-left: -100px;
-    width: 200px;
+    margin-left: -150px;
+    width: 300px;
     bottom: 0%;
     color: #505050;
     z-index: 1;

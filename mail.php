@@ -14,26 +14,14 @@
     $subject = "Заявка visa-vsem.ru";
 
     /* сообщение */
-    $message = '
-    <html>
-    <head>
-     <title>Заявка visa-vsem.ru</title>
-     <meta charset="utf-8">
-    </head>
-    <body>
-        <p>
-        Телефон: '.$phone.'
-        </p>
-    </body>
-    </html>
-    ';
+    $message = 'Телефон: '.$phone;
 
     /* Для отправки HTML-почты вы можете установить шапку Content-type. */
     $headers= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
     /* дополнительные шапки */
-    $headers .= "From: Visa Vsem <office@unrealprojects.com>\r\n";
+    $headers .= "From: Святогор <office@unrealprojects.com>\r\n";
     $headers .= "Cc: office@unrealprojects.com\r\n";
     $headers .= "Bcc: office@unrealprojects.com\r\n";
 

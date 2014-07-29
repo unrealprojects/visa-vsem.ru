@@ -37,4 +37,4 @@
     $headers .= "Bcc: info@visa-vsem.ru\r\n";
 
     /* и теперь отправим из */
-    echo mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers);

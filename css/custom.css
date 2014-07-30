@@ -686,6 +686,11 @@ a.right.carousel-control {
     position: relative;
     z-index: 2;
 }
+
+.round_logo img{
+    border-radius: 100px;
+}
+
 .round_logo_shadow {
     background: url('/img/shadow.png') no-repeat;
     width: 317px;
@@ -710,8 +715,9 @@ a.right.carousel-control {
     text-shadow: none;
     color: rgb(41, 41, 41);
     /*font-family: PFBeauSansPro-Bbook;*/
-    font-size: 17px;
-    text-align: left;
+    font-size: 15px;
+    /*text-align: left;*/
+    text-align: justify;
 }
 
 .glyphicon-chevron-left{
@@ -1026,6 +1032,10 @@ p.thanks {
 
     /* section 3*/
     .round_logo {
+        width: 100px;
+        height: 100px;
+    }
+    .round_logo img{
         width: 100px;
         height: 100px;
     }
@@ -1374,6 +1384,10 @@ p.thanks {
 
 @media (min-width: 1800px){
 
+
+    .inreviews p {
+        font-size: 18px;
+    }
     .navbar-nav>li>a {
         padding: 5px 0px;
         margin: 0px 36px 0px 0px;

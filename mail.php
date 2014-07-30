@@ -6,7 +6,6 @@
     }else{
         $phone='Ошибка';
     }
-    $phone='Телефон: '.$phone;
 
 
     require 'PHPMailerAutoload.php';

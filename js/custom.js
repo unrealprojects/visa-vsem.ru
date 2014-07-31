@@ -93,7 +93,7 @@
 
 //      Инициализация карт
         function initialize() {
-            var myLatlng = new google.maps.LatLng(55.777099, 37.673286);
+            var myLatlng = new google.maps.LatLng(55.778015, 37.675972);
             var myOptions = {
                 zoom: 16,
                 center: myLatlng,
